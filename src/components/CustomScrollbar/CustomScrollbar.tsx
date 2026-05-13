@@ -33,7 +33,7 @@ function calcScrollState(trackH: number): ScrollState {
     }
   }
 
-  return { thumbHeight: tHeight, thumbTop: tTop, isVisible: scrollTop > 300, isLight };
+  return { thumbHeight: tHeight, thumbTop: tTop, isVisible: true, isLight };
 }
 
 export default function CustomScrollbar() {
