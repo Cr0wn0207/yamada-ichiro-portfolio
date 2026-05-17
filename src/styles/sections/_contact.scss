@@ -9,6 +9,10 @@
   padding: $container-padding-large;
   z-index: $z-content;
   overflow: hidden;
+  background-image: url('/video/hero.avif');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 
   .contact-header {
     margin-bottom: $spacing-xl;
