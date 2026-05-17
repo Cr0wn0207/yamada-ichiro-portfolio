@@ -86,19 +86,12 @@
     font-weight: $font-weight-regular;
     color: $color-white;
     margin-bottom: $spacing-sm;
+    position: relative;
+    padding-left: 6rem;
 
     strong {
       font-weight: $font-weight-semibold;
     }
-  }
-
-  h2 {
-    font-size: $font-size-h2;
-    font-weight: $font-weight-regular;
-    color: $color-white;
-    margin-bottom: $spacing-sm;
-    position: relative;
-    padding-left: 6rem;
 
     &::before {
       content: "";
@@ -154,6 +147,7 @@
   object-fit: cover;
 }
 
+/* Hero blob — commented out until me.png is added
 :root {
   --radius-1: 70%;
   --radius-2: 30%;
@@ -166,7 +160,6 @@
 }
 
 .hero-blob {
-  display: none !important;
   width: $blob-width;
   height: $blob-height;
   border-radius: var(--radius-1) var(--radius-2) var(--radius-3)
@@ -186,6 +179,7 @@
   align-items: end;
   justify-content: center;
   animation: blob-animation $animation-blob;
+
   &:hover {
     background-color: $color-button-bg-hover;
     border-color: $color-button-border-hover;
@@ -196,29 +190,28 @@
     width: auto;
     height: $blob-image-scale;
     object-fit: cover;
-    filter: drop-shadow(-25px 25px 5px hsla(0, 0%, 0%, 0.6));
-    filter: grayscale(1);
+    filter: grayscale(1) drop-shadow(-25px 25px 5px hsla(0, 0%, 0%, 0.6));
   }
 }
 
 @keyframes blob-animation {
-  0%,
-  100% {
+  0%, 100% {
     border-radius: var(--radius-1) var(--radius-2) var(--radius-3)
       var(--radius-4) / var(--radius-5) var(--radius-6) var(--radius-7)
       var(--radius-8);
-  }
-  50% {
-    border-radius: var(--radius-4) var(--radius-3) var(--radius-2)
-      var(--radius-1) / var(--radius-8) var(--radius-7) var(--radius-6)
-      var(--radius-5);
   }
   25% {
     border-radius: var(--radius-2) var(--radius-1) var(--radius-4)
       var(--radius-3) / var(--radius-6) var(--radius-5) var(--radius-8)
       var(--radius-7);
   }
+  50% {
+    border-radius: var(--radius-4) var(--radius-3) var(--radius-2)
+      var(--radius-1) / var(--radius-8) var(--radius-7) var(--radius-6)
+      var(--radius-5);
+  }
 }
+*/
 
 @keyframes wave {
   0% {
@@ -252,10 +245,6 @@
     padding: $spacing-xxl 0;
   }
 
-  .hero-blob {
-    display: none;
-  }
-
   .hero-header {
     flex-direction: column-reverse;
     padding: 3rem $spacing-lg;
@@ -264,15 +253,6 @@
   .hero-content {
     h1 {
       font-size: 2rem;
-    }
-
-    h2 {
-      font-size: 1.8rem;
-      padding-left: 0;
-
-      &::before {
-        display: none;
-      }
     }
 
     h2 {

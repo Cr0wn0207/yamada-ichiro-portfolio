@@ -35,7 +35,6 @@ const NotFound = () => {
           muted
           playsInline
           preload="auto"
-          webkit-playsinline="true"
         />
         <div className="hero-overlay"></div>
       </div>

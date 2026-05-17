@@ -69,7 +69,6 @@ export default function Home() {
               preload="auto"
               aria-hidden="true"
               controls={false}
-              webkit-playsinline="true"
             />
           </div>
           <header className="hero-header">
@@ -89,9 +88,6 @@ export default function Home() {
                 Explore My Work
               </a>
             </div>
-            <a href="#about" className="hero-blob">
-              <img src="/images/me.png" alt="A beautiful image of me :)" />
-            </a>
           </header>
           <ScrollDownButton />
           <img
@@ -121,30 +117,29 @@ export default function Home() {
                   <br />
                   When I combined both worlds, everything clicked: web
                   development and software development became my way to turn
-                  imagination into something real, functional, and
-                  interactive.
+                  imagination into something real, functional, and interactive.
                 </p>
               </article>
 
               <article className="about-right">
                 <h3>What I Do</h3>
                 <p>
-                  I build responsive, accessible, and scalable web
-                  applications with clean, maintainable code and a refined,
-                  minimalist design philosophy. I'm drawn to minimalism I love
-                  the clarity it brings, and I always make sure there's
-                  structure and order in everything I create.
+                  I build responsive, accessible, and scalable web applications
+                  with clean, maintainable code and a refined, minimalist design
+                  philosophy. I'm drawn to minimalism I love the clarity it
+                  brings, and I always make sure there's structure and order in
+                  everything I create.
                   <br />
                   <br />
                   My focus is front-end development, grounded in a solid
                   understanding of full-stack workflows. I combine design
-                  thinking, performance, and precision to craft seamless
-                  digital experiences.
+                  thinking, performance, and precision to craft seamless digital
+                  experiences.
                   <br />
                   <br />
                   Whether I'm working in React, styling with Tailwind, or
-                  structuring routes in Next.js, I aim for clarity,
-                  efficiency, and a user-first flow.
+                  structuring routes in Next.js, I aim for clarity, efficiency,
+                  and a user-first flow.
                 </p>
               </article>
             </div>

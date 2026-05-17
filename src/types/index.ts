@@ -26,16 +26,6 @@ export interface SkillsData {
 }
 
 // Form types
-export interface FormState {
-  success: boolean;
-  error?: Record<string, { errors: string[] }>;
-  data?: {
-    name?: string;
-    email?: string;
-    message?: string;
-  };
-}
-
 export interface FormActionState {
   success: boolean;
   error?: Record<string, { errors: string[] }>;

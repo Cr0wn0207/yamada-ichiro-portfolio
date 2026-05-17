@@ -8,7 +8,7 @@ export const projectsData: Project[] = [
     image: "/images/project1.avif",
     description:
       "A mobile-first movie app built in React. It features dynamic content, modular components, and data from a local JSON database.",
-    tags: ["React", "Vite", "JavaScript", "HTML", "SASS", "REST API", "JSON"],
+    tags: ["React", "Vite", "JavaScript", "HTML", "SCSS", "REST API", "JSON"],
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const projectsData: Project[] = [
     image: "/images/project2.avif",
     description:
       "A real estate website built in React with mock data from a local JSON API. The project showcases dynamic content and responsive design with modern frontend technologies.",
-    tags: ["React", "Vite", "JavaScript", "HTML", "SASS", "REST API", "JSON"],
+    tags: ["React", "Vite", "JavaScript", "HTML", "SCSS", "REST API", "JSON"],
   },
   {
     id: 3,
@@ -76,7 +76,7 @@ export const projectsData: Project[] = [
       "Next.js",
       "React",
       "TypeScript",
-      "SASS",
+      "SCSS",
       "HTML",
       "Responsive Design",
       "Booking",

@@ -23,6 +23,7 @@
 - Tickets App: https://movie-ticket-app-burgerking.onrender.com/
 - SwapHub: https://github.com/GR0UD/swaphub
 - Portfolio: https://github.com/GR0UD/portfolio
+- AyaBilA: https://ayabila.dk
 
 ## Machine-Readable Resources
 - Sitemap: https://www.galkins.dev/sitemap.xml
