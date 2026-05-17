@@ -278,7 +278,7 @@
 
     &.navOpen {
       opacity: 1;
-      backdrop-filter: blur(10px);
+      backdrop-filter: $backdrop-blur-header;
       pointer-events: auto;
     }
 

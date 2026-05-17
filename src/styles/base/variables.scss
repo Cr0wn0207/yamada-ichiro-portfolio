@@ -133,12 +133,13 @@ $hero-overlay-z-index: -1;
 
 // ==================== EFFECTS ====================
 
-// Backdrop Filter
-$backdrop-blur-header: blur(16px);
-$backdrop-blur-button: blur(4px);
-$backdrop-blur-project: blur(8px);
-$backdrop-blur-input: blur(8px);
-$backdrop-blur-blob: blur(2.5px);
+// Backdrop Filter — single value, all glass elements share this
+$blur-glass: blur(16px);
+$backdrop-blur-header:  $blur-glass;
+$backdrop-blur-button:  $blur-glass;
+$backdrop-blur-project: $blur-glass;
+$backdrop-blur-input:   $blur-glass;
+$backdrop-blur-blob:    $blur-glass;
 
 // Transitions
 $transition-fast: 0.25s ease;

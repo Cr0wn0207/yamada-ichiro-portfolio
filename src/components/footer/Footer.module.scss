@@ -2,33 +2,14 @@
 
 .footer {
   position: relative;
-  background: transparent;
+  background: $color-projects-overlay;
+  backdrop-filter: $backdrop-blur-header;
+  -webkit-backdrop-filter: $backdrop-blur-header;
+
   padding-top: 8rem;
   padding-bottom: 0;
   z-index: $z-content;
-  overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    inset: -24px;
-    background-image: url('/video/hero.avif');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    filter: blur(16px);
-    z-index: -2;
-    pointer-events: none;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: $color-projects-overlay;
-    z-index: -1;
-    pointer-events: none;
-  }
+  overflow: visible;
 }
 
 .dividerTop {
