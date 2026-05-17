@@ -6,7 +6,6 @@ import ProjectCard from "../components/ProjectCard/ProjectCard";
 import SkillsSection from "../components/SkillsSection/SkillsSection";
 import ScrollDownButton from "../components/ScrollDownButton/ScrollDownButton";
 import { projectsData } from "../data/projects";
-import useMousePosition from "../utilities/useMousePosition";
 
 export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -41,14 +40,6 @@ export default function Home() {
 
     return () => clearTimeout(timer);
   }, []);
-
-  useMousePosition((moveX, moveY) => {
-    if (videoRef.current) {
-      const translateX = moveX * 5.5;
-      const translateY = moveY * 5.5;
-      videoRef.current.style.transform = `translate(${translateX}px, ${translateY}px) scale(1.05)`;
-    }
-  }, 0.05);
 
   return (
     <>
