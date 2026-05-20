@@ -1,0 +1,28 @@
+@use "./variables.scss" as *;
+
+// Base frosted glass — used on any static glass element
+@mixin glass-element($radius: $border-radius-lg) {
+  background-color: $color-button-bg;
+  color: $color-white;
+  backdrop-filter: $backdrop-blur-project;
+  border: 1px solid $color-button-border;
+  border-radius: $radius;
+  transition:
+    background-color $transition-default,
+    border-color $transition-default,
+    transform $transition-fast;
+
+  &:hover {
+    background-color: $color-button-bg-hover;
+    border-color: $color-button-border-hover;
+  }
+}
+
+// Glass for elements that also need a dark-section variant (header, scroll-to-top)
+@mixin glass-scrolled {
+  @include glass-element;
+
+  &.onDark {
+    background-color: $color-ondark-bg-scrolled;
+  }
+}

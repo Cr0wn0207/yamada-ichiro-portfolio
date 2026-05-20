@@ -1,4 +1,5 @@
 @use "@styles/base/variables.scss" as *;
+@use "@styles/base/mixins.scss" as *;
 
 .backupButton {
   position: fixed;
@@ -7,34 +8,19 @@
   width: 75px;
   height: 75px;
   padding: $spacing-sm;
-  border-radius: $border-radius-lg;
-  background-color: $color-button-bg;
-  color: $color-white;
-  backdrop-filter: $backdrop-blur-header;
-  border: 1px solid $color-button-border;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all $transition-default;
   z-index: 1000;
   opacity: 0;
   pointer-events: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  @include glass-scrolled;
 
   &.visible {
     opacity: 1;
     pointer-events: auto;
-  }
-
-  &:hover {
-    background-color: $color-button-bg-hover;
-    border-color: $color-button-border-hover;
-    color: $color-white;
-  }
-
-  &.onDark {
-    background-color: $color-ondark-bg-scrolled;
   }
 
   .icon {

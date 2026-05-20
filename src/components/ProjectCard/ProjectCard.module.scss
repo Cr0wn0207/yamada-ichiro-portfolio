@@ -1,27 +1,16 @@
-@use "@styles/base/variables" as *;
+@use "@styles/base/variables.scss" as *;
+@use "@styles/base/mixins.scss" as *;
 
 .card {
-  background-color: $color-button-bg;
+  @include glass-element;
   color: $color-light;
   padding: $spacing-sm;
-  border: 1px solid $color-button-border;
-  border-radius: $border-radius-lg;
   font-weight: $font-weight-medium;
   font-size: $font-size-nav;
-  backdrop-filter: $backdrop-blur-project;
   box-shadow: $shadow-small;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition:
-    background-color $transition-default,
-    border-color $transition-default,
-    transform $transition-fast;
-
-  &:hover {
-    background-color: $color-button-bg-hover;
-    border-color: $color-button-border-hover;
-  }
 }
 
 .body {
@@ -89,24 +78,12 @@
 }
 
 .actionBtn {
+  @include glass-element($border-radius);
   display: flex;
   align-items: center;
   justify-content: center;
   width: 2.25rem;
   height: 2.25rem;
-  background-color: $color-button-bg;
-  border: 1px solid $color-button-border;
-  border-radius: $border-radius;
-  color: $color-white;
   font-size: 1rem;
   text-decoration: none;
-  backdrop-filter: $backdrop-blur-project;
-  transition:
-    background-color $transition-default,
-    border-color $transition-default;
-
-  &:hover {
-    background-color: $color-button-bg-hover;
-    border-color: $color-button-border-hover;
-  }
 }

@@ -1,4 +1,5 @@
 @use "@styles/base/variables.scss" as *;
+@use "@styles/base/mixins.scss" as *;
 
 .header {
   position: fixed;
@@ -47,26 +48,7 @@
   border: 1px solid transparent;
 
   &.scrolled {
-    background-color: $color-button-bg;
-    color: $color-white;
-    backdrop-filter: $backdrop-blur-project;
-    transition:
-      background-color $transition-default,
-      border-color $transition-default,
-      transform $transition-fast;
-    border: 1px solid $color-button-border;
-    border-radius: $border-radius-lg;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
-
-    &:hover {
-      background-color: $color-button-bg-hover;
-      border-color: $color-button-border-hover;
-      color: $color-white;
-    }
-
-    &.onDark {
-      background-color: $color-ondark-bg-scrolled;
-    }
+    @include glass-scrolled;
   }
 }
 
@@ -90,25 +72,7 @@
   border: 1px solid transparent;
 
   &.scrolled {
-    background-color: $color-button-bg;
-    color: $color-white;
-    backdrop-filter: $backdrop-blur-project;
-    transition:
-      background-color $transition-default,
-      border-color $transition-default,
-      transform $transition-fast;
-    border: 1px solid $color-button-border;
-    border-radius: $border-radius-lg;
-
-    &:hover {
-      background-color: $color-button-bg-hover;
-      border-color: $color-button-border-hover;
-      color: $color-white;
-    }
-
-    &.onDark {
-      background-color: $color-ondark-bg-scrolled;
-    }
+    @include glass-scrolled;
   }
 
   .navLinks {
@@ -168,122 +132,7 @@
 .navGroup {
   display: flex;
   align-items: center;
-  gap: $spacing-sm;
-}
-
-// ==================== LANGUAGE PICKER ====================
-
-.langWrapper {
-  position: relative;
-  width: 75px;
-  height: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: $border-radius-lg;
-  border: 1px solid transparent;
-  transition: all $transition-default;
-
-  &.scrolled {
-    background-color: $color-button-bg;
-    border: 1px solid $color-button-border;
-    border-radius: $border-radius-lg;
-    backdrop-filter: $backdrop-blur-project;
-    transition:
-      background-color $transition-default,
-      border-color $transition-default,
-      transform $transition-fast;
-
-    &:hover {
-      background-color: $color-button-bg-hover;
-      border-color: $color-button-border-hover;
-    }
-
-    &.onDark {
-      background-color: $color-ondark-bg-scrolled;
-    }
-
-    &.dropdownActive {
-      backdrop-filter: none;
-    }
-  }
-}
-
-.langBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  background: none;
-  border: none;
-  color: $color-white;
-  cursor: pointer;
-  transition: opacity $transition-default;
-
-  &:hover {
-    opacity: 0.75;
-  }
-
-  &:focus {
-    outline: none;
-  }
-}
-
-.langIcon {
-  height: 26px;
-  width: 26px;
-  flex-shrink: 0;
-}
-
-.langDropdown {
-  position: absolute;
-  top: calc(100% + 0.5rem);
-  right: 0;
-  min-width: 130px;
-  background-color: $color-button-bg;
-  border: 1px solid $color-button-border;
-  border-radius: $border-radius;
-  backdrop-filter: $backdrop-blur-project;
-  overflow: hidden;
-  z-index: $z-header;
-  list-style: none;
-  padding: 0.25rem 0;
-  transition: background-color $transition-default, border-color $transition-default;
-}
-
-.langWrapper.onDark .langDropdown {
-  background-color: $color-ondark-bg-scrolled;
-  border-color: rgba(0, 0, 0, 0.15);
-}
-
-.langOption {
-  display: block;
-  width: 100%;
-  padding: 0.55rem $spacing-sm;
-  background: none;
-  border: none;
-  color: $color-white;
-  font-size: $font-size-small;
-  text-align: left;
-  cursor: pointer;
-  opacity: 0.8;
-  transition: background-color $transition-fast, opacity $transition-fast;
-
-  &:hover {
-    background-color: $color-button-bg-hover;
-    opacity: 1;
-  }
-}
-
-.langWrapper.onDark .langOption:hover {
-  background-color: $color-button-bg-dark-hover;
-}
-
-.langActive {
-  opacity: 1;
-  font-weight: $font-weight-medium;
+  gap: $spacing-lg;
 }
 
 .navLangTags {
@@ -316,26 +165,7 @@
   }
 
   &.scrolled {
-    background-color: $color-button-bg;
-    color: $color-white;
-    backdrop-filter: $backdrop-blur-project;
-    transition:
-      background-color $transition-default,
-      border-color $transition-default,
-      transform $transition-fast;
-    border: 1px solid $color-button-border;
-    border-radius: $border-radius-lg;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
-
-    &:hover {
-      background-color: $color-button-bg-hover;
-      border-color: $color-button-border-hover;
-      color: $color-white;
-    }
-
-    &.onDark {
-      background-color: $color-ondark-bg-scrolled;
-    }
+    @include glass-scrolled;
   }
 
   .hamburgerLine {
@@ -493,16 +323,6 @@
     &.scrolled {
       padding: $spacing-md $spacing-lg;
     }
-  }
-
-  .langWrapper {
-    width: 55px;
-    height: 55px;
-  }
-
-  .langIcon {
-    height: 22px;
-    width: 22px;
   }
 }
 

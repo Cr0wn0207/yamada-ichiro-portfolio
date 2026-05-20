@@ -1,0 +1,116 @@
+@use "@styles/base/variables.scss" as *;
+@use "@styles/base/mixins.scss" as *;
+
+.wrapper {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $border-radius-lg;
+  border: 1px solid transparent;
+  background-color: transparent;
+  backdrop-filter: none;
+  transition: all $transition-default;
+
+  &.scrolled {
+    @include glass-scrolled;
+
+    &.dropdownActive {
+      backdrop-filter: none;
+    }
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: none;
+  border: none;
+  color: $color-white;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity $transition-default;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.icon {
+  height: 26px;
+  width: 26px;
+  color: $color-white;
+  flex-shrink: 0;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  min-width: 130px;
+  background-color: $color-button-bg;
+  border: 1px solid $color-button-border;
+  border-radius: $border-radius;
+  backdrop-filter: $backdrop-blur-project;
+  overflow: hidden;
+  z-index: $z-header;
+  list-style: none;
+  padding: 0.25rem 0;
+  transition:
+    background-color $transition-default,
+    border-color $transition-default;
+}
+
+.wrapper.onDark .dropdown {
+  background-color: $color-ondark-bg-scrolled;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.option {
+  display: block;
+  width: 100%;
+  padding: 0.55rem $spacing-sm;
+  background: none;
+  border: none;
+  color: $color-white;
+  font-size: $font-size-small;
+  text-align: left;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: background-color $transition-fast, opacity $transition-fast;
+
+  &:hover {
+    background-color: $color-button-bg-hover;
+    opacity: 1;
+  }
+}
+
+.wrapper.onDark .option:hover {
+  background-color: $color-button-bg-dark-hover;
+}
+
+.activeOption {
+  opacity: 1;
+  font-weight: $font-weight-medium;
+}
+
+/* Hide the widget's own injected trigger — we use our own UI */
+:global(.jigts-widget-trigger) {
+  display: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    display: none;
+  }
+}
