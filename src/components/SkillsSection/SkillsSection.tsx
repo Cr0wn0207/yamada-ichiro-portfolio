@@ -2,6 +2,7 @@ import type { CSSProperties } from "react";
 import { skillsData } from "../../data/skills";
 import styles from "./SkillsSection.module.scss";
 import type { SkillLinkProps, SkillColumnProps } from "../../types";
+import { useTranslation } from "../../i18n/TranslationContext";
 
 const SkillLink = ({ icon: Icon, name, color }: SkillLinkProps) => (
   <li>
@@ -27,13 +28,15 @@ const SkillColumn = ({ title, skills }: SkillColumnProps) => (
 );
 
 const SkillsSection = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.columns}>
-        <SkillColumn title="Development" skills={skillsData.development} />
-        <SkillColumn title="Front-End / Styling" skills={skillsData.frontend} />
-        <SkillColumn title="Backend / Tooling" skills={skillsData.backend} />
-        <SkillColumn title="CMS / Dev Tools" skills={skillsData.tools} />
+        <SkillColumn title={t("skillsDev")} skills={skillsData.development} />
+        <SkillColumn title={t("skillsFrontend")} skills={skillsData.frontend} />
+        <SkillColumn title={t("skillsBackend")} skills={skillsData.backend} />
+        <SkillColumn title={t("skillsTools")} skills={skillsData.tools} />
       </div>
     </div>
   );

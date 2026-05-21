@@ -6,8 +6,14 @@ import ProjectCard from "../components/ProjectCard/ProjectCard";
 import SkillsSection from "../components/SkillsSection/SkillsSection";
 import ScrollDownButton from "../components/ScrollDownButton/ScrollDownButton";
 import { projectsData } from "../data/projects";
+import { useTranslation } from "../i18n/TranslationContext";
+import type { TranslationKey } from "../i18n/translations";
+import { getCETimezone } from "../utilities/getCETimezone";
+
+const ceTimezone = getCETimezone();
 
 export default function Home() {
+  const { t } = useTranslation();
   const videoRef = useRef<HTMLVideoElement>(null);
   const emojiRef = useRef<HTMLElement>(null);
 
@@ -16,7 +22,6 @@ export default function Home() {
     const video = videoRef.current;
     if (video) {
       video.play().catch(() => {
-        // Autoplay was prevented, try again on user interaction
         const playOnInteraction = () => {
           video.play();
           document.removeEventListener("touchstart", playOnInteraction);
@@ -36,7 +41,7 @@ export default function Home() {
       if (emojiRef.current) {
         emojiRef.current.classList.add("wave");
       }
-    }, 2800); // Matches intro animation duration
+    }, 2800);
 
     return () => clearTimeout(timer);
   }, []);
@@ -65,22 +70,19 @@ export default function Home() {
           <header className="hero-header">
             <div className="hero-content">
               <h1>
-                <span>Hey, I'm</span> <strong>Mark</strong>{" "}
+                <span>{t("heroGreeting")}</span> <strong>Mark</strong>{" "}
                 <span className="emoji" ref={emojiRef}>
                   👋
                 </span>
               </h1>
-              <h2>A Full-Stack Developer</h2>
-              <p>
-                Based in Denmark — I build clean, fast, and user-focused web
-                experiences.
-              </p>
+              <h2>{t("heroSubtitle")}</h2>
+              <p>{t("heroDescription")}</p>
               <div className="hero-buttons">
                 <a href="#projects" className="btn">
-                  Explore My Work
+                  {t("heroCta")}
                 </a>
                 <a href="#contact" className="btn">
-                  Contact
+                  {t("heroContact")}
                 </a>
               </div>
             </div>
@@ -93,50 +95,34 @@ export default function Home() {
             loading="lazy"
           />
         </section>
+
         {/* ABOUT SECTION */}
         <section id="about">
           <div className="about-wrapper">
             <div className="about-body">
               <article className="about-left">
-                <h3>How I Got Here</h3>
+                <h3>{t("aboutTitle1")}</h3>
                 <p>
-                  I've always been fascinated by technology. It started with
-                  drawing as a kid sketching ideas and imagining how things
-                  could look and move. Around the age of ten, I discovered
-                  computers, and that curiosity evolved fast.
+                  {t("aboutP1a")}
                   <br />
                   <br />
-                  I got into Photoshop, started editing videos in Adobe
-                  Premiere, then moved on to game development and coding.
-                  Eventually, I found myself drawn to UI design the bridge
-                  between creativity and logic.
+                  {t("aboutP1b")}
                   <br />
                   <br />
-                  When I combined both worlds, everything clicked: web
-                  development and software development became my way to turn
-                  imagination into something real, functional, and interactive.
+                  {t("aboutP1c")}
                 </p>
               </article>
 
               <article className="about-right">
-                <h3>What I Do</h3>
+                <h3>{t("aboutTitle2")}</h3>
                 <p>
-                  I build responsive, accessible, and scalable web applications
-                  with clean, maintainable code and a refined, minimalist design
-                  philosophy. I'm drawn to minimalism I love the clarity it
-                  brings, and I always make sure there's structure and order in
-                  everything I create.
+                  {t("aboutP2a")}
                   <br />
                   <br />
-                  My focus is front-end development, grounded in a solid
-                  understanding of full-stack workflows. I combine design
-                  thinking, performance, and precision to craft seamless digital
-                  experiences.
+                  {t("aboutP2b")}
                   <br />
                   <br />
-                  Whether I'm working in React, styling with Tailwind, or
-                  structuring routes in Next.js, I aim for clarity, efficiency,
-                  and a user-first flow.
+                  {t("aboutP2c")}
                 </p>
               </article>
             </div>
@@ -144,6 +130,7 @@ export default function Home() {
             <SkillsSection />
           </div>
         </section>
+
         {/* PROJECTS SECTION */}
         <section id="projects">
           <img
@@ -155,12 +142,16 @@ export default function Home() {
           <div className="projects-overlay"></div>
           <div className="projects-wrapper">
             <header className="projects-header">
-              <h2 className="projects-title">Projects</h2>
+              <h2 className="projects-title">{t("projectsTitle")}</h2>
             </header>
 
             <div className="projects-body">
               {projectsData.map((project) => (
-                <ProjectCard key={project.id} {...project} />
+                <ProjectCard
+                  key={project.id}
+                  {...project}
+                  description={t(`project${project.id}Desc` as TranslationKey)}
+                />
               ))}
             </div>
           </div>
@@ -170,10 +161,11 @@ export default function Home() {
             alt="section divider"
           />
         </section>
+
         {/* CONTACT SECTION */}
         <section id="contact">
           <header className="contact-header">
-            <h2 className="contact-title">Contact</h2>
+            <h2 className="contact-title">{t("contactTitle")}</h2>
           </header>
 
           <div className="contact-wrapper">
@@ -184,8 +176,8 @@ export default function Home() {
             <div className="contact-note">
               <hr />
               <div className="contact-note__content">
-                <span>Available for freelance & full-time opportunities</span>
-                <span>(CET)</span>
+                <span>{t("contactAvailable")}</span>
+                <span>({ceTimezone})</span>
               </div>
             </div>
           </div>

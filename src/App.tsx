@@ -8,6 +8,7 @@ import routes from "~react-pages";
 import { useDynamicTitle } from "./utilities/useDynamicTitle";
 import Header from "./components/header/header";
 import Intro from "./components/intro/intro";
+import { TranslationProvider } from "./i18n/TranslationContext";
 
 // Lazy load non-critical below-the-fold components
 const Footer = lazy(() => import("./components/footer/footer"));
@@ -37,7 +38,7 @@ function App() {
 
   const element = useRoutes(routes);
   return (
-    <>
+    <TranslationProvider>
       <Header />
       {element}
       <Suspense fallback={null}>
@@ -50,7 +51,7 @@ function App() {
       <ToastContainer />
       <Analytics />
       <SpeedInsights />
-    </>
+    </TranslationProvider>
   );
 }
 

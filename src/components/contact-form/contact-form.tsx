@@ -2,8 +2,10 @@ import { toast } from "react-toastify";
 import { submitContactForm } from "./actions";
 import { useActionState, useEffect } from "react";
 import type { FormActionState } from "../../types";
+import { useTranslation } from "../../i18n/TranslationContext";
 
 export default function ContactForm() {
+  const { t } = useTranslation();
   const [state, formAction, isPending] = useActionState<
     FormActionState | null,
     FormData
@@ -14,7 +16,7 @@ export default function ContactForm() {
 
   useEffect(() => {
     if (state?.success) {
-      toast.success("Thank you! Your message has been sent successfully.", {
+      toast.success(t("formSuccess"), {
         position: "bottom-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -23,7 +25,7 @@ export default function ContactForm() {
         draggable: true,
       });
     } else if (state?.error) {
-      toast.error("Please fill out the form and try again.", {
+      toast.error(t("formError"), {
         position: "bottom-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -50,7 +52,7 @@ export default function ContactForm() {
     >
       <div className="form-group">
         <label htmlFor="name" className="sr-only">
-          Name
+          {t("formName")}
         </label>
         <input
           type="text"
@@ -58,7 +60,7 @@ export default function ContactForm() {
             getFieldError("name") ? "input-error" : ""
           }`}
           id="name"
-          placeholder="Name"
+          placeholder={t("formName")}
           name="name"
           defaultValue={state?.data?.name || ""}
           aria-describedby={getFieldError("name") ? "name-error" : undefined}
@@ -72,7 +74,7 @@ export default function ContactForm() {
 
       <div className="form-group">
         <label htmlFor="email" className="sr-only">
-          Email
+          {t("formEmail")}
         </label>
         <input
           type="email"
@@ -80,7 +82,7 @@ export default function ContactForm() {
             getFieldError("email") ? "input-error" : ""
           }`}
           id="email"
-          placeholder="Email"
+          placeholder={t("formEmail")}
           name="email"
           defaultValue={state?.data?.email || ""}
           aria-describedby={getFieldError("email") ? "email-error" : undefined}
@@ -94,14 +96,14 @@ export default function ContactForm() {
 
       <div className="form-group">
         <label htmlFor="message" className="sr-only">
-          Message
+          {t("formMessage")}
         </label>
         <textarea
           className={`form-control ${
             getFieldError("message") ? "input-error" : ""
           }`}
           rows={10}
-          placeholder="Drop your message here"
+          placeholder={t("formMessage")}
           name="message"
           id="message"
           defaultValue={state?.data?.message || ""}
@@ -124,7 +126,9 @@ export default function ContactForm() {
       >
         <div className="alt-send-button">
           <i className="fa fa-paper-plane"></i>
-          <span className="send-text">{isPending ? "SENDING..." : "SEND"}</span>
+          <span className="send-text">
+            {isPending ? t("formSending") : t("formSend")}
+          </span>
         </div>
       </button>
     </form>

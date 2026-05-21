@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./Header.module.scss";
 import TranslationWidget, { LANGUAGES } from "../TranslationWidget/TranslationWidget";
+import { useTranslation } from "../../i18n/TranslationContext";
 
 type SectionId = "hero" | "about" | "projects" | "contact" | "footer";
 
@@ -8,6 +9,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [currentSection, setCurrentSection] = useState<SectionId>("hero");
+  const { t, setLang } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,17 +49,9 @@ const Header = () => {
   const isDarkSection =
     currentSection === "about" || currentSection === "contact";
 
-  const handleMobileLang = (code: string) => {
+  const handleMobileLang = (code: (typeof LANGUAGES)[number]["code"]) => {
     closeMenu();
-    const w = window as Window & {
-      translate?: (lang: string) => void;
-      resetTranslation?: (lang: string) => void;
-    };
-    if (code === "en") {
-      w.resetTranslation?.("en");
-    } else {
-      w.translate?.(code);
-    }
+    setLang(code);
   };
 
   return (
@@ -86,13 +80,13 @@ const Header = () => {
             <ul
               className={`${styles.navLinks} ${menuOpen ? styles.navOpen : ""}`}
             >
-              <li><a href="#hero" onClick={closeMenu}>Home</a></li>
-              <li><a href="#about" onClick={closeMenu}>About</a></li>
-              <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
-              <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+              <li><a href="#hero" onClick={closeMenu}>{t("navHome")}</a></li>
+              <li><a href="#about" onClick={closeMenu}>{t("navAbout")}</a></li>
+              <li><a href="#projects" onClick={closeMenu}>{t("navProjects")}</a></li>
+              <li><a href="#contact" onClick={closeMenu}>{t("navContact")}</a></li>
             </ul>
             <div className={`${styles.navLangTags} ${menuOpen ? styles.navOpen : ""}`}>
-              {LANGUAGES.slice(0, 3).map(({ code, label }) => (
+              {LANGUAGES.map(({ code, label }) => (
                 <button
                   key={code}
                   className={styles.navLangTag}

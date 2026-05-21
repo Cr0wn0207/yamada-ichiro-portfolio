@@ -1,7 +1,9 @@
 import styles from "./Footer.module.scss";
 import { Icons } from "../../utilities/useIcons";
+import { useTranslation } from "../../i18n/TranslationContext";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -14,13 +16,13 @@ const Footer = () => {
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.section}>
-            <h2>Contact</h2>
+            <h2>{t("footerContact")}</h2>
             <ul className={styles.contactList}>
               <li className={styles.listItem}>
                 <Icons.email className={styles.techIcon} />
                 <span className={styles.contactText}>
                   <a href="mailto:marksgalkins@gmail.com?subject=Hello%20from%20website&body=Hi%20Mark%2C%0D%0A%0D%0AI%20wanted%20to%20ask%20about...">
-                    Email
+                    {t("footerEmail")}
                   </a>
                 </span>
               </li>
@@ -28,25 +30,17 @@ const Footer = () => {
           </div>
 
           <div className={styles.section}>
-            <h2>Navigation</h2>
+            <h2>{t("footerNav")}</h2>
             <ul className={styles.links}>
-              <li>
-                <a href="#hero">Home</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#projects">Projects</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
+              <li><a href="#hero">{t("footerHome")}</a></li>
+              <li><a href="#about">{t("footerAbout")}</a></li>
+              <li><a href="#projects">{t("footerProjects")}</a></li>
+              <li><a href="#contact">{t("footerContact")}</a></li>
             </ul>
           </div>
 
           <div className={styles.section}>
-            <h2>Connect</h2>
+            <h2>{t("footerConnect")}</h2>
             <ul className={styles.socialLinks}>
               <li className="github">
                 <a
@@ -103,7 +97,7 @@ const Footer = () => {
           >
             Mark Galkins
           </a>
-          . All rights reserved.
+          . {t("footerRights")}
         </p>
       </div>
     </footer>

@@ -1,13 +1,14 @@
 import { useState, useEffect, useRef } from "react";
 import { PiTranslate } from "react-icons/pi";
 import styles from "./TranslationWidget.module.scss";
+import { useTranslation } from "../../i18n/TranslationContext";
+import type { Lang } from "../../i18n/translations";
+import "flag-icons/css/flag-icons.min.css";
 
-const LANGUAGES = [
-  { code: "en", label: "English" },
-  { code: "da", label: "Dansk" },
-  { code: "de", label: "Deutsch" },
-  { code: "es", label: "Español" },
-  { code: "fr", label: "Français" },
+export const LANGUAGES: { code: Lang; label: string; flag: string }[] = [
+  { code: "en", label: "English", flag: "gb" },
+  { code: "da", label: "Dansk",   flag: "dk" },
+  { code: "de", label: "Deutsch", flag: "de" },
 ];
 
 interface Props {
@@ -16,21 +17,9 @@ interface Props {
 }
 
 const TranslationWidget = ({ isScrolled, isDarkSection }: Props) => {
+  const { lang, setLang } = useTranslation();
   const [langOpen, setLangOpen] = useState(false);
-  const [activeLang, setActiveLang] = useState("en");
   const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const key = import.meta.env.VITE_TRANSLATION_ACCESS_KEY;
-    if (!key) return;
-
-    import("translation-widget").then(({ default: init }) => {
-      init(key, {
-        pageLanguage: "en",
-        showUI: true,
-      });
-    });
-  }, []);
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -42,19 +31,9 @@ const TranslationWidget = ({ isScrolled, isDarkSection }: Props) => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const handleSelect = (code: string) => {
-    setActiveLang(code);
+  const handleSelect = (code: Lang) => {
+    setLang(code);
     setLangOpen(false);
-    const w = window as Window & {
-      translate?: (lang: string, onComplete?: (r: unknown) => void, onError?: (e: unknown) => void) => void;
-      resetTranslation?: (lang: string, onComplete?: (r: unknown) => void, onError?: (e: unknown) => void) => void;
-    };
-    const onError = (e: unknown) => console.error("[TranslationWidget] error:", e);
-    if (code === "en") {
-      w.resetTranslation?.("en", undefined, onError);
-    } else {
-      w.translate?.(code, undefined, onError);
-    }
   };
 
   return (
@@ -72,12 +51,13 @@ const TranslationWidget = ({ isScrolled, isDarkSection }: Props) => {
       </button>
       {langOpen && (
         <ul className={styles.dropdown}>
-          {LANGUAGES.map(({ code, label }) => (
+          {LANGUAGES.map(({ code, label, flag }) => (
             <li key={code}>
               <button
-                className={`${styles.option} ${activeLang === code ? styles.activeOption : ""}`}
+                className={`${styles.option} ${lang === code ? styles.activeOption : ""}`}
                 onClick={() => handleSelect(code)}
               >
+                <span className={`fi fi-${flag}`} />
                 {label}
               </button>
             </li>
@@ -88,5 +68,4 @@ const TranslationWidget = ({ isScrolled, isDarkSection }: Props) => {
   );
 };
 
-export { LANGUAGES };
 export default TranslationWidget;
