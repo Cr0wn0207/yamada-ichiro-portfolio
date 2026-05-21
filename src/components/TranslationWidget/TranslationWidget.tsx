@@ -49,21 +49,19 @@ const TranslationWidget = ({ isScrolled, isDarkSection }: Props) => {
       >
         <PiTranslate className={styles.icon} />
       </button>
-      {langOpen && (
-        <ul className={styles.dropdown}>
-          {LANGUAGES.map(({ code, label, flag }) => (
-            <li key={code}>
-              <button
-                className={`${styles.option} ${lang === code ? styles.activeOption : ""}`}
-                onClick={() => handleSelect(code)}
-              >
-                <span className={`fi fi-${flag}`} />
-                {label}
-              </button>
-            </li>
-          ))}
-        </ul>
-      )}
+      <ul className={styles.dropdown}>
+        {LANGUAGES.map(({ code, label, flag }) => (
+          <li key={code}>
+            <button
+              className={`${styles.option} ${lang === code ? styles.activeOption : ""}`}
+              onClick={() => handleSelect(code)}
+            >
+              <span className={`fi fi-${flag}`} />
+              {label}
+            </button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

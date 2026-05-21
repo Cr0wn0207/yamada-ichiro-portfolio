@@ -35,7 +35,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: $spacing-xxl;
-  margin-bottom: $spacing-xxl;
+  margin-bottom: $spacing-lg;
 
   @media screen and (max-width: 1194px) {
     grid-template-columns: 1fr 1fr;
@@ -83,7 +83,6 @@
   .listItem {
     display: flex;
     align-items: center;
-    margin-bottom: $spacing-md;
     list-style: none;
 
     .techIcon {
@@ -273,15 +272,24 @@
   }
 }
 
+@media screen and (max-width: 1194px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .footer {
-    padding: $spacing-xxl 0 0;
+    padding-top: $spacing-xxl;
+  }
+
+  .container {
+    padding: 0 2rem;
   }
 
   .content {
     grid-template-columns: 1fr;
     gap: $spacing-lg;
-    padding: 0 2rem;
   }
 
   .bottom {
