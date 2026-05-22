@@ -9,11 +9,13 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [currentSection, setCurrentSection] = useState<SectionId>("hero");
+  const [langOpen, setLangOpen] = useState(false);
   const { t, setLang } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+      setLangOpen(false);
 
       const sections: SectionId[] = [
         "hero",
@@ -70,7 +72,7 @@ const Header = () => {
         </a>
 
         <div className={styles.navGroup}>
-          <TranslationWidget isScrolled={isScrolled} isDarkSection={isDarkSection} />
+          <TranslationWidget isScrolled={isScrolled} isDarkSection={isDarkSection} langOpen={langOpen} setLangOpen={setLangOpen} />
 
           <nav
             className={`${styles.nav} ${menuOpen ? styles.navOpen : ""} ${

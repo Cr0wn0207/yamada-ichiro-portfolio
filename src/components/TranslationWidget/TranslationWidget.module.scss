@@ -54,11 +54,10 @@
 }
 
 .dropdown {
-  display: none;
   position: absolute;
   top: calc(100% + 1rem);
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-6px);
   min-width: 130px;
   list-style: none;
   padding: 0;
@@ -67,9 +66,19 @@
   border: 1px solid $color-button-border;
   border-radius: $border-radius-lg;
   z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s ease;
 
   .wrapper.dropdownActive & {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
   }
 }
 

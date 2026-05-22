@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { PiTranslate } from "react-icons/pi";
 import styles from "./TranslationWidget.module.scss";
 import { useTranslation } from "../../i18n/TranslationContext";
@@ -14,11 +14,12 @@ export const LANGUAGES: { code: Lang; label: string; flag: string }[] = [
 interface Props {
   isScrolled: boolean;
   isDarkSection: boolean;
+  langOpen: boolean;
+  setLangOpen: (open: boolean) => void;
 }
 
-const TranslationWidget = ({ isScrolled, isDarkSection }: Props) => {
+const TranslationWidget = ({ isScrolled, isDarkSection, langOpen, setLangOpen }: Props) => {
   const { lang, setLang } = useTranslation();
-  const [langOpen, setLangOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
