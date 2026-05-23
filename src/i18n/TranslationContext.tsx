@@ -13,8 +13,14 @@ const TranslationContext = createContext<TranslationContextValue>({
   t: (key) => translations.en[key],
 });
 
+function detectBrowserLang(): Lang {
+  const supported: Lang[] = ["en", "da", "de"];
+  const browserLang = navigator.language.slice(0, 2).toLowerCase() as Lang;
+  return supported.includes(browserLang) ? browserLang : "en";
+}
+
 export function TranslationProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Lang>("en");
+  const [lang, setLang] = useState<Lang>(detectBrowserLang);
 
   const t = (key: TranslationKey): string =>
     translations[lang][key] ?? translations.en[key];
