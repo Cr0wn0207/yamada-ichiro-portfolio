@@ -27,7 +27,7 @@ function App() {
   // Dynamic page title that rotates through different messages
   useDynamicTitle(
     [
-      "Mark Galkins | Full-Stack Developer",
+      "Yamada Ichiro | Full-Stack Developer",
       "👋 Welcome!",
       "Available for work",
       "Web Developer • Denmark",

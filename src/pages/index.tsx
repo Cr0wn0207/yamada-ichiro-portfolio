@@ -72,7 +72,7 @@ export default function Home() {
           <header className="hero-header">
             <div className="hero-content">
               <h1>
-                <span>{t("heroGreeting")}</span> <strong>Mark</strong>{" "}
+                <span>{t("heroGreeting")}</span> <strong>Ichiro</strong>{" "}
                 <span className="emoji" ref={emojiRef}>
                   👋
                 </span>

@@ -1,7 +1,7 @@
-site: Mark Galkins Portfolio
+site: Yamada Ichiro Portfolio
 canonical: https://www.galkins.dev/
 updated: 2026-05-17
-owner: Mark Galkins
+owner: Yamada Ichiro
 role: Full-Stack Developer
 location: Denmark
 summary: Personal portfolio showcasing projects, skills, and contact details.

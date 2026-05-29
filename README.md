@@ -1,4 +1,4 @@
-# Mark Galkins - Portfolio
+# Yamada Ichiro - Portfolio
 
 A minimalistic portfolio website inspired by Japanese design principles and wabi-sabi aesthetics. The design embraces simplicity, clean typography, and the organic beauty of imperfection, much like ripped paper textures and negative space.
 
@@ -31,4 +31,4 @@ The site features a curated selection of my projects, technical skills, and ways
 - **Sharp 0.34** - Image optimization (dev)
 - **@vitejs/plugin-react 5.1** - React plugin for Vite
 
-Copyright © 2026 Mark Galkins. All rights reserved.
+Copyright © 2026 Yamada Ichiro. All rights reserved.

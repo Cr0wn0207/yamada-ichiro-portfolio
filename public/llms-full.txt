@@ -1,16 +1,16 @@
-# Mark Galkins Portfolio - Full LLM Context
+# Yamada Ichiro Portfolio - Full LLM Context
 
 Last updated: 2026-05-17
 Canonical: https://www.galkins.dev/
 
 ## Identity
-Name: Mark Galkins
+Name: Yamada Ichiro
 Role: Full-Stack Developer
 Location: Denmark
 Primary focus: Frontend-heavy full-stack applications, clean UI, performance, and maintainable architecture.
 
 ## About
-Mark Galkins creates responsive, accessible, and scalable web applications with clean structure and minimalist design principles.
+Yamada Ichiro creates responsive, accessible, and scalable web applications with clean structure and minimalist design principles.
 His work combines design thinking with engineering rigor, balancing visual clarity, performance, and usability.
 
 Background highlights:

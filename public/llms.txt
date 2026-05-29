@@ -1,12 +1,12 @@
-# Mark Galkins Portfolio
+# Yamada Ichiro Portfolio
 
-> Personal portfolio for Mark Galkins, full-stack developer based in Denmark.
+> Personal portfolio for Yamada Ichiro, full-stack developer based in Denmark.
 
 ## Canonical URL
 - https://www.galkins.dev/
 
 ## Summary
-- Mark Galkins builds clean, fast, and user-focused websites.
+- Yamada Ichiro builds clean, fast, and user-focused websites.
 - Focus areas: React, TypeScript, Next.js, Node.js/Express, UI/UX, responsive frontend.
 - Availability: freelance and full-time opportunities (CET timezone).
 
