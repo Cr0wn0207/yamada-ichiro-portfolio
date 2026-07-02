@@ -21,7 +21,7 @@ projects:
     url: https://avix.co.jp/
   - name: Mobirise Japan
     url: https://mobirise.jp/
-  - name: COHINA https://cohina.net/
+  - name: COHINA
     url: https://cohina.net/
   - name: Product Senses
     url: https://product-senses.mazrica.com/
