@@ -1,6 +1,6 @@
 # Yamada Ichiro Portfolio
 
-> Personal portfolio for Yamada Ichiro, full-stack developer based in Denmark.
+> Personal portfolio for Yamada Ichiro, full-stack developer based in Japan.
 
 ## Canonical URL
 - https://www.galkins.dev/
@@ -8,7 +8,7 @@
 ## Summary
 - Yamada Ichiro builds clean, fast, and user-focused websites.
 - Focus areas: React, TypeScript, Next.js, Node.js/Express, UI/UX, responsive frontend.
-- Availability: freelance and full-time opportunities (CET timezone).
+- Availability: freelance and full-time opportunities (JST timezone).
 
 ## Contact
 - Email: marksgalkins@gmail.com

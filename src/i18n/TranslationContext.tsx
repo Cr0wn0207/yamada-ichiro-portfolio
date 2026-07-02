@@ -14,7 +14,7 @@ const TranslationContext = createContext<TranslationContextValue>({
 });
 
 function detectBrowserLang(): Lang {
-  const supported: Lang[] = ["en", "da", "de"];
+  const supported: Lang[] = ["en", "ja", "ko", "zh"];
   const browserLang = navigator.language.slice(0, 2).toLowerCase() as Lang;
   return supported.includes(browserLang) ? browserLang : "en";
 }

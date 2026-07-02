@@ -6,7 +6,7 @@ Canonical: https://www.galkins.dev/
 ## Identity
 Name: Yamada Ichiro
 Role: Full-Stack Developer
-Location: Denmark
+Location: Japan
 Primary focus: Frontend-heavy full-stack applications, clean UI, performance, and maintainable architecture.
 
 ## About

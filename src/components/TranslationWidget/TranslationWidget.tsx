@@ -7,8 +7,9 @@ import "flag-icons/css/flag-icons.min.css";
 
 export const LANGUAGES: { code: Lang; label: string; flag: string }[] = [
   { code: "en", label: "English", flag: "gb" },
-  { code: "da", label: "Dansk",   flag: "dk" },
-  { code: "de", label: "Deutsch", flag: "de" },
+  { code: "ja", label: "日本語", flag: "jp" },
+  { code: "ko", label: "한국어", flag: "kr" },
+  { code: "zh", label: "中文", flag: "cn" },
 ];
 
 interface Props {

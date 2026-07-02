@@ -30,7 +30,7 @@ function App() {
       "Yamada Ichiro | Full-Stack Developer",
       "👋 Welcome!",
       "Available for work",
-      "Web Developer • Denmark",
+      "Web Developer • Japan",
       "React • Next.js • TypeScript",
     ],
     3000,

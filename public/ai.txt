@@ -3,7 +3,7 @@ canonical: https://www.galkins.dev/
 updated: 2026-05-17
 owner: Yamada Ichiro
 role: Full-Stack Developer
-location: Denmark
+location: Japan
 summary: Personal portfolio showcasing projects, skills, and contact details.
 
 contact:
