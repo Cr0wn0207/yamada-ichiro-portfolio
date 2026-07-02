@@ -18,7 +18,6 @@ import {
   FaHtml5,
   FaRegWindowMaximize,
   FaGithub,
-  FaCodepen,
   FaInstagram,
   FaPhoneAlt,
 } from "react-icons/fa";
@@ -30,12 +29,10 @@ import { CgFigma } from "react-icons/cg";
 import {
   FaGitlab,
   FaLocationDot,
-  FaLinkedin,
   FaDiscord,
 } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { FaDev } from "react-icons/fa";
 
 export const Icons = {
   // 💻 Skills
@@ -68,12 +65,9 @@ export const Icons = {
 
   // 📬 Contact & Social
   github: FaGithub,
-  codepen: FaCodepen,
   instagram: FaInstagram,
   email: IoMdMail,
   phone: FaPhoneAlt,
   location: FaLocationDot,
-  linkedin: FaLinkedin,
   discord: FaDiscord,
-  devto: FaDev,
 } as const;

@@ -1,6 +1,6 @@
 # Yamada Ichiro Portfolio - Full LLM Context
 
-Last updated: 2026-05-17
+Last updated: 2026-07-02
 Canonical: https://www.galkins.dev/
 
 ## Identity
@@ -24,38 +24,38 @@ Background highlights:
 - About section with background and development philosophy.
 - Skills section grouped by development area.
 - Projects section with selected portfolio projects.
-- Contact section with form and direct social links.
+- Contact section with form and direct contact links.
 
 ## Project Catalog
-1) MyMoviez
-- URL: https://github.com/GR0UD/mymovies
-- Description: Mobile-first movie app in React with dynamic content and modular components.
-- Technologies: React, Vite, JavaScript, HTML, SASS, REST API, JSON
+1) AVIX
+- URL: https://avix.co.jp/
+- Description: Corporate website for AVIX, featuring a clean layout and responsive design tailored for the Japanese market.
+- Technologies: Corporate, Responsive Design, Japanese market
 
-2) Din Maegler
-- URL: https://github.com/GR0UD/dinmaegler
-- Description: Real estate web app built in React with mock local JSON API data and responsive UI.
-- Technologies: React, Vite, JavaScript, HTML, SASS, REST API, JSON
+2) Mobirise Japan
+- URL: https://mobirise.jp/
+- Description: Japanese landing page for Mobirise, showcasing the website builder with localized content and modern UI.
+- Technologies: Landing Page, Localization, UI/UX
 
-3) Tickets App
-- URL: https://movie-ticket-app-burgerking.onrender.com/
-- Description: Responsive movie booking experience with seat selection and payment flow.
-- Technologies: React, Vite, JavaScript, HTML, SCSS, REST API, JSON
+3) Silver Studio
+- URL: https://silver784578.studio.site/
+- Description: A creative studio site built on STUDIO, with a polished visual identity and smooth browsing experience.
+- Technologies: STUDIO, Creative, Responsive Design
 
-4) SwapHub
-- URL: https://github.com/GR0UD/swaphub
-- Description: Marketplace platform for trading/swapping items with auth, listings, and proposals.
-- Technologies: Next.js, React, Node.js, Express, JavaScript, SCSS, REST API, SQLite, Zod
+4) Product Senses
+- URL: https://product-senses.mazrica.com/
+- Description: Product marketing site for Mazrica Product Senses platform, focused on clear messaging and conversion.
+- Technologies: SaaS, Marketing, Product
 
-5) Portfolio
-- URL: https://github.com/GR0UD/portfolio
-- Description: Personal portfolio with component-based architecture and contact workflow.
-- Technologies: React, TypeScript, Vite, SCSS, HTML, Responsive Design, Zod
+5) Visioncon Global
+- URL: https://visioncon-global.com/
+- Description: Global corporate website for Visioncon, presenting services and brand presence with a professional design.
+- Technologies: Corporate, Global, Branding
 
-6) AyaBilA
-- URL: https://ayabila.dk
-- Description: Professional beauty services website for kosmetolog and frisor services with appointment booking via Cal.com and multi-language support.
-- Technologies: Next.js, React, TypeScript, SASS, HTML, Responsive Design, Booking, translation-widget
+6) LMI
+- URL: https://www.lmi.ne.jp/
+- Description: Official website for LMI Japan, delivering structured information architecture and accessible navigation.
+- Technologies: Corporate, Japan, Accessibility
 
 ## Skills Snapshot
 Development:
@@ -71,11 +71,8 @@ Tools:
 - WordPress, MAMP, LocalWP, VS Code, Figma, Git, Vercel
 
 ## Contact and Profiles
-Email: marksgalkins@gmail.com
-GitHub: https://github.com/GR0UD
-LinkedIn: https://www.linkedin.com/in/markgalkin/
-CodePen: https://codepen.io/GROUD-the-solid
-Dev.to: https://dev.to/gr0ud
+Email: YamadaIchiro0207@outlook.com
+GitHub: https://github.com/Cr0wn0207
 
 ## Crawl and Discovery Endpoints
 robots.txt: https://www.galkins.dev/robots.txt

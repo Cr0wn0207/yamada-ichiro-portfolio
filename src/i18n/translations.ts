@@ -10,6 +10,7 @@ export const translations = {
 
     // Hero
     heroGreeting: "Hey, I'm",
+    heroName: "Ichiro",
     heroSubtitle: "A Full-Stack Developer",
     heroDescription:
       "Based in Japan. I build clean, fast, and user-focused websites.",
@@ -43,17 +44,17 @@ export const translations = {
 
     // Projects descriptions
     project1Desc:
-      "A mobile-first movie app built in React featuring dynamic content, modular components, and a local JSON database for browsing and discovering films.",
+      "Corporate website for AVIX with a clean layout and responsive design tailored for the Japanese market.",
     project2Desc:
-      "A real estate website built in React with mock data from a local JSON API, showcasing dynamic property listings and a responsive, modern design.",
+      "Japanese landing page for Mobirise, showcasing the website builder with localized content and modern UI.",
     project3Desc:
-      "A sleek movie ticket booking app built with React and Vite, featuring interactive seat selection, a smooth checkout flow, and a responsive UI.",
+      "Creative studio site on STUDIO with a polished visual identity and smooth browsing experience.",
     project4Desc:
-      "A marketplace platform for trading items, built with Next.js and a Node.js/Express backend, featuring user auth, item listings, and swap proposals.",
+      "Product marketing site for Mazrica's Product Senses platform, focused on clear messaging and conversion.",
     project5Desc:
-      "My personal portfolio built with React and TypeScript, featuring a component-based architecture, responsive design, and a functional contact form.",
+      "Global corporate website for Visioncon, presenting services and brand presence with a professional design.",
     project6Desc:
-      "A beauty services website built with Next.js, featuring Cal.com appointment booking, multi-language support, and a clean, responsive SCSS design.",
+      "Official website for LMI Japan, delivering structured information architecture and accessible navigation.",
 
     // Contact
     contactTitle: "Contact",
@@ -62,7 +63,7 @@ export const translations = {
     contactInfoDescription:
       "Need a fast, pixel-perfect website or a full-stack web app built right? I write clean, maintainable code and care about the details. Drop a message and let's talk.",
     contactInfoEmailLabel: "EMAIL",
-    contactInfoEmailValue: "marksgalkins@gmail.com",
+    contactInfoEmailValue: "YamadaIchiro0207@outlook.com",
     contactInfoResponseLabel: "RESPONSE TIME",
     contactInfoResponseValue: "Within 24 hours",
     contactInfoCallLabel: "OPEN TO",
@@ -103,6 +104,7 @@ export const translations = {
 
     // Hero
     heroGreeting: "こんにちは、",
+    heroName: "山田一朗です。",
     heroSubtitle: "フルスタック開発者",
     heroDescription:
       "日本を拠点に、クリーンで高速、ユーザー中心のウェブサイトを構築しています。",
@@ -134,17 +136,17 @@ export const translations = {
     // Projects
     projectsTitle: "プロジェクト",
     project1Desc:
-      "Reactで構築したモバイルファーストの映画アプリ。動的コンテンツ、モジュラーなコンポーネント、ローカルJSONデータベースで映画の閲覧と発見が可能です。",
+      "AVIXのコーポレートサイト。日本市場向けに最適化されたクリーンなレイアウトとレスポンシブデザインを実装しました。",
     project2Desc:
-      "Reactで構築した不動産ウェブサイト。ローカルJSON APIのモックデータを使用し、動的な物件リストとレスポンシブなモダンデザインを展示しています。",
+      "Mobiriseの日本語ランディングページ。ローカライズされたコンテンツとモダンなUIで製品を紹介しています。",
     project3Desc:
-      "ReactとViteで構築した映画チケット予約アプリ。インタラクティブな座席選択、スムーズなチェックアウトフロー、レスポンシブUIを備えています。",
+      "STUDIOで構築したクリエイティブスタジオサイト。洗練されたビジュアルアイデンティティと快適な閲覧体験を提供します。",
     project4Desc:
-      "Next.jsとNode.js/Expressバックエンドで構築したアイテム取引マーケットプレイス。ユーザー認証、アイテムリスト、交換提案機能を備えています。",
+      "MazricaのProduct Sensesプラットフォームのプロダクトマーケティングサイト。明確なメッセージとコンバージョンを重視しています。",
     project5Desc:
-      "ReactとTypeScriptで構築した個人ポートフォリオ。コンポーネントベースのアーキテクチャ、レスポンシブデザイン、機能的なお問い合わせフォームを備えています。",
+      "Visionconのグローバルコーポレートサイト。サービスとブランドをプロフェッショナルなデザインで表現しています。",
     project6Desc:
-      "Next.jsで構築した美容サービスウェブサイト。Cal.comによる予約機能、多言語対応、クリーンでレスポンシブなSCSSデザインを備えています。",
+      "LMI Japanの公式ウェブサイト。構造化された情報設計とアクセシブルなナビゲーションを実現しています。",
 
     // Contact
     contactTitle: "お問い合わせ",
@@ -153,7 +155,7 @@ export const translations = {
     contactInfoDescription:
       "高速でピクセルパーフェクトなウェブサイトや、しっかり作り込まれたフルスタックアプリが必要ですか？クリーンで保守しやすいコードを書き、細部までこだわります。お気軽にメッセージをお送りください。",
     contactInfoEmailLabel: "メール",
-    contactInfoEmailValue: "marksgalkins@gmail.com",
+    contactInfoEmailValue: "YamadaIchiro0207@outlook.com",
     contactInfoResponseLabel: "返信時間",
     contactInfoResponseValue: "24時間以内",
     contactInfoCallLabel: "対応可能",
@@ -194,6 +196,7 @@ export const translations = {
 
     // Hero
     heroGreeting: "안녕하세요,",
+    heroName: "이치로",
     heroSubtitle: "풀스택 개발자",
     heroDescription:
       "일본을 기반으로 깔끔하고 빠르며 사용자 중심의 웹사이트를 만듭니다.",
@@ -225,17 +228,17 @@ export const translations = {
     // Projects
     projectsTitle: "프로젝트",
     project1Desc:
-      "React로 제작한 모바일 우선 영화 앱. 동적 콘텐츠, 모듈형 컴포넌트, 로컬 JSON 데이터베이스로 영화를 탐색하고 발견할 수 있습니다.",
+      "AVIX 기업 웹사이트. 일본 시장에 맞춘 깔끔한 레이아웃과 반응형 디자인을 구현했습니다.",
     project2Desc:
-      "React로 제작한 부동산 웹사이트. 로컬 JSON API의 목 데이터를 사용해 동적 매물 목록과 반응형 모던 디자인을 보여줍니다.",
+      "Mobirise 일본어 랜딩 페이지. 현지화된 콘텐츠와 모던한 UI로 제품을 소개합니다.",
     project3Desc:
-      "React와 Vite로 제작한 영화 티켓 예매 앱. 인터랙티브 좌석 선택, 매끄러운 결제 흐름, 반응형 UI를 갖추고 있습니다.",
+      "STUDIO로 제작한 크리에이티브 스튜디오 사이트. 세련된 비주얼 아이덴티티와 편안한 탐색 경험을 제공합니다.",
     project4Desc:
-      "Next.js와 Node.js/Express 백엔드로 제작한 아이템 거래 마켓플레이스. 사용자 인증, 상품 목록, 교환 제안 기능을 제공합니다.",
+      "Mazrica Product Senses 플랫폼의 제품 마케팅 사이트. 명확한 메시지와 전환에 중점을 둡니다.",
     project5Desc:
-      "React와 TypeScript로 제작한 개인 포트폴리오. 컴포넌트 기반 아키텍처, 반응형 디자인, 기능적인 문의 폼을 갖추고 있습니다.",
+      "Visioncon 글로벌 기업 웹사이트. 서비스와 브랜드를 전문적인 디자인으로 표현합니다.",
     project6Desc:
-      "Next.js로 제작한 뷰티 서비스 웹사이트. Cal.com 예약 기능, 다국어 지원, 깔끔한 반응형 SCSS 디자인을 갖추고 있습니다.",
+      "LMI Japan 공식 웹사이트. 구조화된 정보 설계와 접근 가능한 내비게이션을 제공합니다.",
 
     // Contact
     contactTitle: "문의",
@@ -244,7 +247,7 @@ export const translations = {
     contactInfoDescription:
       "빠르고 픽셀 퍼펙트한 웹사이트나 제대로 만들어진 풀스택 웹 앱이 필요하신가요? 깔끔하고 유지보수하기 쉬운 코드를 작성하며 세부 사항을 중요하게 생각합니다. 메시지를 남겨 주세요.",
     contactInfoEmailLabel: "이메일",
-    contactInfoEmailValue: "marksgalkins@gmail.com",
+    contactInfoEmailValue: "YamadaIchiro0207@outlook.com",
     contactInfoResponseLabel: "응답 시간",
     contactInfoResponseValue: "24시간 이내",
     contactInfoCallLabel: "가능한 역할",
@@ -285,6 +288,7 @@ export const translations = {
 
     // Hero
     heroGreeting: "你好，我是",
+    heroName: "一郎",
     heroSubtitle: "全栈开发者",
     heroDescription:
       "常驻日本。我打造简洁、快速、以用户为中心的网站。",
@@ -316,17 +320,17 @@ export const translations = {
     // Projects
     projectsTitle: "项目",
     project1Desc:
-      "使用 React 构建的移动优先电影应用，具有动态内容、模块化组件和本地 JSON 数据库，用于浏览和发现影片。",
+      "AVIX 企业官网，为日本市场打造简洁布局与响应式设计。",
     project2Desc:
-      "使用 React 构建的房地产网站，通过本地 JSON API 的模拟数据展示动态房源列表和响应式现代设计。",
+      "Mobirise 日语落地页，以本地化内容与现代化 UI 展示产品。",
     project3Desc:
-      "使用 React 和 Vite 构建的电影票务应用，具有交互式选座、流畅的结账流程和响应式界面。",
+      "基于 STUDIO 打造的创意工作室网站，呈现精致视觉识别与流畅浏览体验。",
     project4Desc:
-      "使用 Next.js 和 Node.js/Express 后端构建的物品交易平台，具有用户认证、商品列表和交换提案功能。",
+      "Mazrica Product Senses 平台的产品营销网站，注重清晰传达与转化。",
     project5Desc:
-      "使用 React 和 TypeScript 构建的个人作品集，具有基于组件的架构、响应式设计和功能完善的联系表单。",
+      "Visioncon 全球企业官网，以专业设计展示服务与品牌形象。",
     project6Desc:
-      "使用 Next.js 构建的美容服务网站，具有 Cal.com 预约功能、多语言支持和简洁的响应式 SCSS 设计。",
+      "LMI Japan 官方网站，提供结构化信息架构与无障碍导航。",
 
     // Contact
     contactTitle: "联系",
@@ -335,7 +339,7 @@ export const translations = {
     contactInfoDescription:
       "需要快速、像素级精准的网站，或一个做得扎实的全栈 Web 应用？我编写简洁、可维护的代码，并注重细节。欢迎留言，我们一起聊聊。",
     contactInfoEmailLabel: "邮箱",
-    contactInfoEmailValue: "marksgalkins@gmail.com",
+    contactInfoEmailValue: "YamadaIchiro0207@outlook.com",
     contactInfoResponseLabel: "回复时间",
     contactInfoResponseValue: "24 小时内",
     contactInfoCallLabel: "开放机会",

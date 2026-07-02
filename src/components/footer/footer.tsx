@@ -21,7 +21,7 @@ const Footer = () => {
               <li className={styles.listItem}>
                 <Icons.email className={styles.techIcon} />
                 <span className={styles.contactText}>
-                  <a href="mailto:marksgalkins@gmail.com?subject=Hello%20from%20website&body=Hi%20Ichiro%2C%0D%0A%0D%0AI%20wanted%20to%20ask%20about...">
+                  <a href="mailto:YamadaIchiro0207@outlook.com?subject=Hello%20from%20website&body=Hi%20Ichiro%2C%0D%0A%0D%0AI%20wanted%20to%20ask%20about...">
                     {t("footerEmail")}
                   </a>
                 </span>
@@ -44,42 +44,12 @@ const Footer = () => {
             <ul className={styles.socialLinks}>
               <li className="github">
                 <a
-                  href="https://github.com/GR0UD"
+                  href="https://github.com/Cr0wn0207"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
                 >
                   <Icons.github />
-                </a>
-              </li>
-              <li className="linkedin">
-                <a
-                  href="https://www.linkedin.com/in/markgalkin/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                >
-                  <Icons.linkedin />
-                </a>
-              </li>
-              <li className="codepen">
-                <a
-                  href="https://codepen.io/GROUD-the-solid"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="CodePen"
-                >
-                  <Icons.codepen />
-                </a>
-              </li>
-              <li className="devto">
-                <a
-                  href="https://dev.to/gr0ud"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Dev.to"
-                >
-                  <Icons.devto />
                 </a>
               </li>
             </ul>
@@ -90,7 +60,7 @@ const Footer = () => {
         <p>
           &copy; {currentYear}{" "}
           <a
-            href="https://github.com/GR0UD"
+            href="https://github.com/Cr0wn0207"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.nameLink}

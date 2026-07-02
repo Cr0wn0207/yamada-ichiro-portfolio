@@ -68,7 +68,7 @@ export default function Home() {
           <header className="hero-header">
             <div className="hero-content">
               <h1>
-                <span>{t("heroGreeting")}</span> <strong>Ichiro</strong>{" "}
+                <span>{t("heroGreeting")}</span> <strong>{t("heroName")}</strong>{" "}
                 <span className="emoji" ref={emojiRef}>
                   👋
                 </span>
@@ -179,7 +179,7 @@ export default function Home() {
                         {t("contactInfoEmailLabel")}
                       </span>
                       <a
-                        href="mailto:marksgalkins@gmail.com"
+                        href="mailto:YamadaIchiro0207@outlook.com"
                         className="contact-info__value contact-info__value--link"
                       >
                         {t("contactInfoEmailValue")}
