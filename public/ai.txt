@@ -17,8 +17,8 @@ skills:
   tools: WordPress, MAMP, LocalWP, VS Code, Figma, Git, Vercel
 
 projects:
-  - name: AVIX
-    url: https://avix.co.jp/
+  - name: COHINA
+    url: https://cohina.net/
   - name: Mobirise Japan
     url: https://mobirise.jp/
   - name: Silver Studio

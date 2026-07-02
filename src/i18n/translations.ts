@@ -44,7 +44,7 @@ export const translations = {
 
     // Projects descriptions
     project1Desc:
-      "Corporate website for AVIX with a clean layout and responsive design tailored for the Japanese market.",
+      "Japanese fashion e-commerce store with seasonal collections, magazine content, and international shipping support.",
     project2Desc:
       "Japanese landing page for Mobirise, showcasing the website builder with localized content and modern UI.",
     project3Desc:
@@ -136,7 +136,7 @@ export const translations = {
     // Projects
     projectsTitle: "プロジェクト",
     project1Desc:
-      "AVIXのコーポレートサイト。日本市場向けに最適化されたクリーンなレイアウトとレスポンシブデザインを実装しました。",
+      "COHINAのファッションECサイト。シーズンコレクション、マガジンコンテンツ、海外配送対応を備えたオンラインストアです。",
     project2Desc:
       "Mobiriseの日本語ランディングページ。ローカライズされたコンテンツとモダンなUIで製品を紹介しています。",
     project3Desc:
@@ -228,7 +228,7 @@ export const translations = {
     // Projects
     projectsTitle: "프로젝트",
     project1Desc:
-      "AVIX 기업 웹사이트. 일본 시장에 맞춘 깔끔한 레이아웃과 반응형 디자인을 구현했습니다.",
+      "COHINA 일본 패션 이커머스 스토어. 시즌 컬렉션, 매거진 콘텐츠, 해외 배송 지원을 제공합니다.",
     project2Desc:
       "Mobirise 일본어 랜딩 페이지. 현지화된 콘텐츠와 모던한 UI로 제품을 소개합니다.",
     project3Desc:
@@ -320,7 +320,7 @@ export const translations = {
     // Projects
     projectsTitle: "项目",
     project1Desc:
-      "AVIX 企业官网，为日本市场打造简洁布局与响应式设计。",
+      "COHINA 日本时尚电商网站，提供季节系列、杂志内容与海外配送支持。",
     project2Desc:
       "Mobirise 日语落地页，以本地化内容与现代化 UI 展示产品。",
     project3Desc:

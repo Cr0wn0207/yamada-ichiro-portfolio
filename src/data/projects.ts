@@ -3,12 +3,12 @@ import type { Project } from "../types";
 export const projectsData: Project[] = [
   {
     id: 1,
-    title: "AVIX",
-    url: "https://avix.co.jp/",
+    title: "COHINA",
+    url: "https://cohina.net/",
     image: "/images/project1.png",
     description:
-      "Corporate website for AVIX, featuring a clean layout and responsive design tailored for the Japanese market.",
-    tags: ["Corporate", "Responsive Design", "Japanese"],
+      "Japanese fashion e-commerce store with seasonal collections, magazine content, and international shipping support.",
+    tags: ["E-commerce", "Fashion", "Japanese"],
   },
   {
     id: 2,

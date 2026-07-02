@@ -27,9 +27,9 @@ Background highlights:
 - Contact section with form and direct contact links.
 
 ## Project Catalog
-1) AVIX
-- URL: https://avix.co.jp/
-- Description: Corporate website for AVIX, featuring a clean layout and responsive design tailored for the Japanese market.
+1) COHINA
+- URL: https://cohina.net/
+- Description: COHINA online store (https://cohina.net/), featuring e-commerce layout and responsive design tailored for the Japanese market.
 - Technologies: Corporate, Responsive Design, Japanese market
 
 2) Mobirise Japan
