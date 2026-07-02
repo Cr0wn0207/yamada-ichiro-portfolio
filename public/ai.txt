@@ -1,4 +1,4 @@
-site: Yamada Ichiro Portfolio
+﻿site: Yamada Ichiro Portfolio
 canonical: https://www.galkins.dev/
 updated: 2026-05-29
 owner: Yamada Ichiro
@@ -17,12 +17,12 @@ skills:
   tools: WordPress, MAMP, LocalWP, VS Code, Figma, Git, Vercel
 
 projects:
-  - name: COHINA
-    url: https://cohina.net/
+  - name: AVIX
+    url: https://avix.co.jp/
   - name: Mobirise Japan
     url: https://mobirise.jp/
-  - name: Silver Studio
-    url: https://silver784578.studio.site/
+  - name: COHINA https://cohina.net/
+    url: https://cohina.net/
   - name: Product Senses
     url: https://product-senses.mazrica.com/
   - name: Visioncon Global

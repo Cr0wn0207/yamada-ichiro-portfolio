@@ -1,4 +1,4 @@
-# Yamada Ichiro Portfolio
+﻿# Yamada Ichiro Portfolio
 
 > Personal portfolio for Yamada Ichiro, full-stack developer based in Japan.
 
@@ -15,9 +15,9 @@
 - GitHub: https://github.com/Cr0wn0207
 
 ## Portfolio Projects
-- COHINA: https://cohina.net/
+- AVIX: https://avix.co.jp/
 - Mobirise Japan: https://mobirise.jp/
-- Silver Studio: https://silver784578.studio.site/
+- COHINA https://cohina.net/
 - Product Senses: https://product-senses.mazrica.com/
 - Visioncon Global: https://visioncon-global.com/
 - LMI: https://www.lmi.ne.jp/

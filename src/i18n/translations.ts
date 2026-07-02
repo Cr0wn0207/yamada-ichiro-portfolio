@@ -44,11 +44,11 @@ export const translations = {
 
     // Projects descriptions
     project1Desc:
-      "Japanese fashion e-commerce store with seasonal collections, magazine content, and international shipping support.",
+      "Corporate website for AVIX with a clean layout and responsive design tailored for the Japanese market.",
     project2Desc:
       "Japanese landing page for Mobirise, showcasing the website builder with localized content and modern UI.",
     project3Desc:
-      "Creative studio site on STUDIO with a polished visual identity and smooth browsing experience.",
+      "Japanese fashion e-commerce store with editorial lookbooks, seasonal collections, and a refined shopping experience.",
     project4Desc:
       "Product marketing site for Mazrica's Product Senses platform, focused on clear messaging and conversion.",
     project5Desc:
@@ -136,11 +136,11 @@ export const translations = {
     // Projects
     projectsTitle: "プロジェクト",
     project1Desc:
-      "COHINAのファッションECサイト。シーズンコレクション、マガジンコンテンツ、海外配送対応を備えたオンラインストアです。",
+      "AVIXのコーポレートサイト。日本市場向けに最適化されたクリーンなレイアウトとレスポンシブデザインを実装しました。",
     project2Desc:
       "Mobiriseの日本語ランディングページ。ローカライズされたコンテンツとモダンなUIで製品を紹介しています。",
     project3Desc:
-      "STUDIOで構築したクリエイティブスタジオサイト。洗練されたビジュアルアイデンティティと快適な閲覧体験を提供します。",
+      "COHINAのファッションECサイト。ルックブック、シーズンコレクション、洗練されたショッピング体験を提供します。",
     project4Desc:
       "MazricaのProduct Sensesプラットフォームのプロダクトマーケティングサイト。明確なメッセージとコンバージョンを重視しています。",
     project5Desc:
@@ -228,11 +228,11 @@ export const translations = {
     // Projects
     projectsTitle: "프로젝트",
     project1Desc:
-      "COHINA 일본 패션 이커머스 스토어. 시즌 컬렉션, 매거진 콘텐츠, 해외 배송 지원을 제공합니다.",
+      "AVIX 기업 웹사이트. 일본 시장에 맞춘 깔끔한 레이아웃과 반응형 디자인을 구현했습니다.",
     project2Desc:
       "Mobirise 일본어 랜딩 페이지. 현지화된 콘텐츠와 모던한 UI로 제품을 소개합니다.",
     project3Desc:
-      "STUDIO로 제작한 크리에이티브 스튜디오 사이트. 세련된 비주얼 아이덴티티와 편안한 탐색 경험을 제공합니다.",
+      "COHINA 패션 이커머스 스토어. 룩북, 시즌 컬렉션, 세련된 쇼핑 경험을 제공합니다.",
     project4Desc:
       "Mazrica Product Senses 플랫폼의 제품 마케팅 사이트. 명확한 메시지와 전환에 중점을 둡니다.",
     project5Desc:
@@ -320,11 +320,11 @@ export const translations = {
     // Projects
     projectsTitle: "项目",
     project1Desc:
-      "COHINA 日本时尚电商网站，提供季节系列、杂志内容与海外配送支持。",
+      "AVIX 企业官网，为日本市场打造简洁布局与响应式设计。",
     project2Desc:
       "Mobirise 日语落地页，以本地化内容与现代化 UI 展示产品。",
     project3Desc:
-      "基于 STUDIO 打造的创意工作室网站，呈现精致视觉识别与流畅浏览体验。",
+      "COHINA 时尚电商网站，提供画册展示、季节系列与精致的购物体验。",
     project4Desc:
       "Mazrica Product Senses 平台的产品营销网站，注重清晰传达与转化。",
     project5Desc:

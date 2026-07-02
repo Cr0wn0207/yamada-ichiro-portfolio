@@ -3,12 +3,12 @@ import type { Project } from "../types";
 export const projectsData: Project[] = [
   {
     id: 1,
-    title: "COHINA",
-    url: "https://cohina.net/",
+    title: "AVIX",
+    url: "https://avix.co.jp/",
     image: "/images/project1.png",
     description:
-      "Japanese fashion e-commerce store with seasonal collections, magazine content, and international shipping support.",
-    tags: ["E-commerce", "Fashion", "Japanese"],
+      "Corporate website for AVIX, featuring a clean layout and responsive design tailored for the Japanese market.",
+    tags: ["Corporate", "Responsive Design", "Japanese"],
   },
   {
     id: 2,
@@ -21,12 +21,12 @@ export const projectsData: Project[] = [
   },
   {
     id: 3,
-    title: "Silver Studio",
-    url: "https://silver784578.studio.site/",
+    title: "COHINA",
+    url: "https://cohina.net/",
     image: "/images/project3.png",
     description:
-      "A creative studio site built on STUDIO, with a polished visual identity and smooth browsing experience.",
-    tags: ["STUDIO", "Creative", "Responsive Design"],
+      "Japanese fashion e-commerce store with editorial lookbooks, seasonal collections, and a refined shopping experience.",
+    tags: ["E-commerce", "Fashion", "Japanese"],
   },
   {
     id: 4,
