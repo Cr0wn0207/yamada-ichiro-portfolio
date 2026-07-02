@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import styles from "./Header.module.scss";
 import TranslationWidget, { LANGUAGES } from "../TranslationWidget/TranslationWidget";
 import { useTranslation } from "../../i18n/TranslationContext";
+import Logo from "../logo/Logo";
 
 type SectionId = "hero" | "about" | "projects" | "contact" | "footer";
 
@@ -67,8 +68,9 @@ const Header = () => {
             isDarkSection ? styles.onDark : ""
           }`}
           onClick={closeMenu}
+          aria-label="Yamada Ichiro"
         >
-          <img src="/logo.avif" alt="Logo" className={styles.logoImage} />
+          <Logo className={styles.logoImage} />
         </a>
 
         <div className={styles.navGroup}>

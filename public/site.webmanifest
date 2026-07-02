@@ -4,10 +4,16 @@
   "description": "Full-Stack Developer based in Japan — I build clean, fast, and user-focused websites.",
   "icons": [
     {
-      "src": "/logo.avif",
+      "purpose": "any maskable",
+      "type": "image/avif",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "src": "/logo.avif"
+    },
+    {
+      "purpose": "any",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "src": "/logo.svg"
     },
     {
       "src": "/favicon-32x32.png",
